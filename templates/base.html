@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>shiyanlou</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename="bootstrap-3.3.7-dist/css/bootstrap.min.css") }}" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+     <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+  
+     </ul>
+
+       {% block content %}
+              xxoo
+       {% endblock %}
+    </div>
+      
+    <footer class="blog-footer">
+      <p>Blog template built for  </p>
+    </footer>  
+
+    <script src="{{ url_for('static', filename="bootstrap-3.3.7-dist/js/bootstrap.min.js") }}"></script>
+  </body>
+</html>

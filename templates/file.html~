@@ -1,0 +1,14 @@
+{% if file_id == '1' %}
+    <p> {{file[0].content}}</p>
+    <p> {{file[0].created_time}}</p>
+    <p> {{category[0].name}}</p>
+{% endif %}
+
+{% if file_id == '2' %}
+    <p> {{file[1].content}}</p>
+    <p> {{file[1].created_time}}</p>
+    <p> {{category[1].name}}</p>
+{% endif %}
+
+
+

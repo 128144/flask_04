@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>this is index.html </h1>
+<ul>
+    {% for i in file %}
+    <li>
+     <a href=http://127.0.0.1:3000/files/{{i.id}}> title: {{i.title}}</a>
+         {% for tag in i.tags %}
+             <span class="label label-warning">{{tag}}</span>
+         {% endfor %}
+     <p> {{i.id}}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
